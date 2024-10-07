@@ -1,0 +1,149 @@
+﻿@{
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+
+
+<html>
+<head>
+    <title>
+        IDK MAN
+    </title>
+    <script language="Javascript">
+        function submitAddress() {
+            var address = document.getElementById('shippingAddress').value;
+            document.getElementById('hiddenAddress').value = address;
+            document.getElementById('deliveryDisplay').innerText = document.getElementById('hiddenAddress').value;
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <form id="deliveryForm">
+            <h2>Địa chỉ giao hàng</h2>
+            <input type="text" id="shippingAddress" placeholder="Nhập địa chỉ giao hàng">
+            <input type="hidden" id="hiddenAddress">
+            <button type="button" onclick="submitAddress()">Xác nhận</button>
+        </form>
+        <h3>Giao đến:</h3>
+        <p id="deliveryDisplay"></p>
+    </div>
+    <div class="grid__row" style="margin-left: -36px; margin-right: -36px;">
+        <div class="grid_column-2_5">
+            <a href="" style="text-decoration:none;">
+                <div class="home__product-item">
+                    <div class="home__product-item__img" style="background-image: url(https://salt.tikicdn.com/cache/750x750/ts/product/be/d9/31/f9a8136c56b3a63ae3ecd46a14d3edae.jpg);"></div>
+                    <div class="home__category-item__price">40.990.000<sup>₫</sup></div>
+                    <h3 class="home__category-item__rating" style="text-transform:uppercase;">Apple</h3>
+                    <h3 class="home__category-item__name">Apple iPhone 16 Pro Max</h3>
+                    <div class="home__category-item__rating has-border" style="margin-top:8px;">
+                        <i class="fas fa-star" style="color: rgb(255, 196, 0);"></i>
+                        <i class="fas fa-star" style="color: rgb(255, 196, 0);"></i>
+                        <i class="fas fa-star" style="color: rgb(255, 196, 0);"></i>
+                        <i class="fas fa-star" style="color: rgb(255, 196, 0);"></i>
+                        <i class="fas fa-star" style="color: rgb(255, 196, 0);"></i>
+                        <span style="border-left:1px solid; padding-left:5px; border-color:lightgray">
+                            Đã bán 95
+                        </span>
+                    </div>
+                    <div class="home__category-item__option-main" style="margin-top:8px;">
+                        <span class="home__category-item__option">1 Màu</span>
+                        <span class="home__category-item__option home__category-item__storage">1 Dung lượng</span>
+                    </div>
+                    <div class="shipping-ads" style="margin-top:34px;">
+                        <img width="32" height="16" src="~/Content/sliderimgsrc/categoryicon/now.png" />
+                        <span class="idk-man">Giao siêu tốc 2h</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="grid_column-2_5">
+            <a href="" style="text-decoration:none;">
+                <div class="home__product-item">
+                    <div class="home__product-item__img" style="background-image: url(https://salt.tikicdn.com/cache/750x750/ts/product/ba/09/35/200c7cc330da71f253391bc35e5ddbd0.jpg);">
+                    </div>
+                    <div class="home__category-item__price">28.990.000<sup>₫</sup></div>
+                    <h3 class="home__category-item__rating" style="text-transform:uppercase;">Apple</h3>
+                    <h3 class="home__category-item__name">Apple iPhone 16 Pro</h3>
+                    <div class="home__category-item__rating has-border" style="margin-top:8px;">
+                        <i class="fas fa-star" style="color: rgb(255, 196, 0);"></i>
+                        <i class="fas fa-star" style="color: rgb(255, 196, 0);"></i>
+                        <i class="fas fa-star" style="color: rgb(255, 196, 0);"></i>
+                        <i class="fas fa-star" style="color: rgb(255, 196, 0);"></i>
+                        <i class="fas fa-star" style="color: rgb(255, 196, 0);"></i>
+                        <span style="border-left:1px solid; padding-left:5px; border-color:lightgray">
+                            Đã bán 48
+                        </span>
+                    </div>
+                    <div class="home__category-item__option-main" style="margin-top:8px;">
+                        <span class="home__category-item__option">2 Màu sắc</span>
+                        <span class="home__category-item__option home__category-item__storage">2 Dung lượng</span>
+                    </div>
+                    <div class="shipping-ads" style="margin-top:34px;">
+                        <img width="32" height="16" src="~/Content/sliderimgsrc/categoryicon/now.png" />
+                        <span class="idk-man">Giao siêu tốc 2h</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="grid_column-2_5">
+            <a href="" style="text-decoration:none;">
+                <div class="home__product-item">
+                    <div class="home__product-item__img" style="background-image: url(https://salt.tikicdn.com/cache/750x750/ts/product/97/9c/8e/fb45174523e90d14179b4d76bf661946.jpg);"></div>
+                    <div style="display:inline-flex;">
+                        <div class="home__category-item__price" style="color: rgb(255, 66, 78);">25.490.000<sup>₫</sup></div>
+                        <div class="home__category-item__dicount">-2%</div>
+                    </div>
+                    <h3 class="home__category-item__rating" style="text-transform:uppercase;">Apple</h3>
+                    <h3 class="home__category-item__name">Apple iPhone 16 - Xanh Mòng Két - 256GB</h3>
+                    <div class="home__category-item__rating has-border" style="margin-top:8px;">
+                        <i class="fas fa-star" style="color: rgb(255, 196, 0);"></i>
+                        <i class="fas fa-star" style="color: rgb(255, 196, 0);"></i>
+                        <i class="fas fa-star" style="color: rgb(255, 196, 0);"></i>
+                        <i class="fas fa-star" style="color: rgb(255, 196, 0);"></i>
+                        <i class="fas fa-star" style="color: rgb(255, 196, 0);"></i>
+                        <span style="border-left:1px solid; padding-left:5px; border-color:lightgray">
+                            Đã bán 15
+                        </span>
+                    </div>
+                    <div class="home__category-item__option-main" style="margin-top:8px;">
+                        <span class="home__category-item__option">5 Màu</span>
+                        <span class="home__category-item__option home__category-item__storage">2 Dung lượng</span>
+                    </div>
+                    <div class="shipping-ads">
+                        <img width="32" height="16" src="~/Content/sliderimgsrc/categoryicon/now.png" />
+                        <span class="idk-man">Giao siêu tốc 2h</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="grid_column-2_5">
+            <a href="" style="text-decoration:none;">
+                <div class="home__product-item">
+                    <div class="home__product-item__img" style="background-image: url(https://salt.tikicdn.com/cache/750x750/ts/product/86/51/f9/e2d53e87842497ae7e95a3f86173ca1d.jpg);"></div>
+                    <div class="home__category-item__price">25.990.000<sup>₫</sup></div>
+                    <h3 class="home__category-item__rating" style="text-transform:uppercase;">Apple</h3>
+                    <h3 class="home__category-item__name">Apple iPhone 16 Plus</h3>
+                    <div class="home__category-item__rating has-border" style="margin-top:8px;">
+                        <i class="fas fa-star" style="color: rgb(255, 196, 0);"></i>
+                        <i class="fas fa-star" style="color: rgb(255, 196, 0);"></i>
+                        <i class="fas fa-star" style="color: rgb(255, 196, 0);"></i>
+                        <i class="fas fa-star" style="color: rgb(255, 196, 0);"></i>
+                        <i class="fas fa-star" style="color: rgb(255, 196, 0);"></i>
+                        <span style="border-left:1px solid; padding-left:5px; border-color:lightgray">
+                            Đã bán 12
+                        </span>
+                    </div>
+                    <div class="home__category-item__option-main" style="margin-top:8px;">
+                        <span class="home__category-item__option">3 Màu</span>
+                        <span class="home__category-item__option home__category-item__storage">2 Dung lượng</span>
+                    </div>
+                    <div class="shipping-ads" style="margin-top:34px;">
+                        <img width="32" height="16" src="~/Content/sliderimgsrc/categoryicon/now.png" />
+                        <span class="idk-man">Giao siêu tốc 2h</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

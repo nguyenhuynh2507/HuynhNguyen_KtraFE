@@ -1,0 +1,42 @@
+﻿@{
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+<html>
+<head>
+    <link href="~/Content/script/All-css.css" rel="stylesheet" />
+    <title>ĐỊA CHỈ GIAO HÀNG</title>
+    <meta http-equiv="content-type" content="text/html" charset="utf-8" />
+    <script language="Javascript">
+        function submitAddress() {
+            var address = document.getElementById('shippingAddress').value;
+            document.getElementById('hiddenAddress').value = address;
+            document.getElementById('deliveryDisplay').innerText = document.getElementById('hiddenAddress').value;
+        }
+    </script>
+</head>
+<body>
+    <div class="modal">
+        <div class="modal__overlay">
+        </div>
+        <div class="modal__body">
+            <div class="modal__inner">
+                <a href="~/Lobby/MainLobby" class="close__btn">
+                    <span class="close__btn-icon"><i class="close__btn-icon-logo fas fa-times"></i></span>
+                </a>
+                <form id="deliveryForm">
+                    <h2 style="text-align:center;">Địa chỉ giao hàng</h2>
+                    <div style="display: flex; justify-content: center;">
+                        <input class="addr__input" type="text" id="shippingAddress" placeholder="Nhập địa chỉ giao hàng">
+                    </div>
+                    <input type="hidden" id="hiddenAddress">
+                    <div style="display: flex; justify-content: center;">
+                        <button class="submit__btn" type="button" onclick="submitAddress()">Xác nhận</button>
+                    </div>
+                </form>
+                <h3>Giao đến:</h3>
+                <p id="deliveryDisplay"></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
